@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Polinômio de Taylor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" async src="js/MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<script src="js/math.min.js"></script>
+	<script src="js/plotly-1.35.2.min.js"></script>
+	<script src="js/main.js"></script>	
+</head>
+<body>
+	<div class="container pt-5">
+		<h1><strong>Substituir uma função por um Polinômio de Taylor</strong></h1>
+		<div class="row pt-5">
+			<div class="col-sm-4 form-group">
+				<label for="expr">Entrada:</label>
+				<input type="text" class="form-control" id="expr" placeholder="Ex.: x^2 + 2">
+
+				<label for="centro">Centro:</label>
+				<input type="text" class="form-control" id="centro" placeholder="Ex.: 0">
+
+				<label for="grau">Grau:</label>
+				<input type="text" class="form-control" id="grau" placeholder="Ex.: 3">
+
+				<button type="button" id="calcular" class="btn btn-primary mt-3 float-right">Calcular</button>
+			</div>
+			<div class="col-sm-2">
+				<label for="funcao">Função:</label>
+				<div id="funcao">$$$$</div>
+			</div>
+			<div class="col-sm-12 mr-5">
+				<label for="polinomio">Polinômio de Taylor:</label>
+				<div id="polinomio">$$$$</div>
+			</div>
+			<div class="col-sm-12">
+				<div id="plot"></div>
+			</div>
+			<div class="col-sm-12">
+				<div id="plot_poli"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

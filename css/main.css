@@ -1,0 +1,11 @@
+body,
+html,
+table td,
+table th,
+input[type=text] {
+	font-size: 11pt;
+	font-family: verdana, arial, sans-serif;
+}
+h1 {
+	font-size: 16pt;
+}
